@@ -37,7 +37,7 @@ Costo estimado: USD $0.005 por consulta. Google otorga USD $200 de crédito grat
 Ajusta los siguientes parámetros al inicio del archivo reverse_geocode_arcgis.py:
 
 ```python
-NOMBRE_CAPA     = "Estructura-de-Soporte"  # Nombre exacto de la capa en el panel de contenidos 
+NOMBRE_CAPA     = "Estructura"              # Nombre exacto de la capa en el panel de contenidos 
 NOMBRE_MAPA     = "Map"                     # Nombre exacto del mapa en ArcGIS Pro
 CAMPO_DIRECCION = "LOCATION_ADDRESS"        # Campo donde se escribe la dirección
 CAMPO_FECHA_MOD = "EDITION_DATE"            # Campo de fecha de modificación (Editor Tracking)
@@ -57,8 +57,8 @@ Ejecuta el script.
 
 Ejemplo de salida esperada
 ```python
-[INFO] Capa encontrada: 'Estructura-de-Soporte' en mapa 'Map'
-[INFO] Workspace : C:\Proyectos\Pradera.gdb
+[INFO] Capa encontrada: 'Estructura' en mapa 'Map'
+[INFO] Workspace : C:\Proyectos\Proyecto.gdb
 [INFO] Tipo      : LocalDatabase
 [INFO] Filtro    : EDITION_DATE >= timestamp '2026-05-06 00:00:00' AND ...
 [INFO] Registros a procesar: 39
