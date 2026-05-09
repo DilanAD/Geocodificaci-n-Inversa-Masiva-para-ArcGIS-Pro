@@ -1,6 +1,6 @@
 # Geocodificación Inversa Masiva para ArcGIS Pro
 Script de Python para ArcGIS Pro 3.x que automatiza la asignación de direcciones postales a elementos de una capa de puntos, utilizando la Google Maps Geocoding API.
-Desarrollado en el contexto de un proyecto de gestión de infraestructura eléctrica de baja tensión en el municipio de Pradera, Valle del Cauca, Colombia.
+Desarrollado en el contexto de un proyecto de gestión de infraestructura eléctrica de baja tensión.
 
 # 📋 Descripción
 El flujo manual que automatiza este script es el siguiente:
@@ -15,11 +15,11 @@ Filtro por fecha de modificación — procesa únicamente los elementos editados
 Filtro por dirección vacía — omite registros que ya tienen dirección calculada, evitando duplicados si el script se ejecuta varias veces en el mismo día.
 Reproyección automática — convierte coordenadas de MAGNA-SIRGAS Colombia Bogotá (EPSG:3116) a WGS84 (EPSG:4326) antes de consultar la API.
 Compatible con File GDB y Enterprise GDB (SDE/Oracle) — detecta el tipo de workspace automáticamente y abre sesión de edición cuando es necesario.
-Formato de dirección simplificado — retorna únicamente calle y municipio: Cra. 4a # 1B-77, Pradera.
+Formato de dirección simplificado — retorna únicamente calle y municipio: Cra. 4a # 1B-77, Municipio X.
 
 
 # 🛠️ Requisitos
-RequisitoVersión / DetalleArcGIS Pro3.0.3 o superiorPython3.x (incluido en ArcGIS Pro)requestsIncluida en el entorno de ArcGIS ProGoogle Maps API KeyGeocoding API habilitada
+Requisito Versión / DetalleArcGIS Pro3.0.3 o superiorPython3.x (incluido en ArcGIS Pro)requests Incluida en el entorno de ArcGIS Pro Google Maps API Key Geocoding API habilitada
 
 # 🔑 Configuración de la API Key
 
